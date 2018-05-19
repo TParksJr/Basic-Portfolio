@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Tyson's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 body {
@@ -17,12 +19,6 @@ section {
     margin: 40px 150px;
     background-color: white;
     padding: 10px;
-    height: 848px;
-}
-
-section img {
-    float: left;
-    margin: 30px;
 }
 
 section h1 {
@@ -31,14 +27,9 @@ section h1 {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-section p {
-    text-indent: 50px;
-    color: #777777;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-section div {
-    float: left;
+section img {
+    margin: 20px;
+    position: relative;
 }
 
 footer {
@@ -47,7 +38,11 @@ footer {
     text-align: center;
     font-family: Georgia, Times, "Times New Roman", serif;
     border-top: solid rgb(12,173,167) 5px;
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
     height: 50px;
+    clear: both;
 }
 
 #links a {
@@ -74,6 +69,19 @@ footer {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+#links a:visited {
+    color: white;
+    background-color: #777777;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#links a:visited:hover {
+    color: white;
+    background-color: rgb(12,173,167);
+    text-decoration: none;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
 #name {
     float: left;
     color: white;
@@ -82,6 +90,75 @@ footer {
     text-align: center;
     font-size: 32px;
     font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+    width: 960px;
+}
+
+#hangman {
+    position: relative;
+    bottom: 797px;
+    left: -323px;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(12,173,167);
+    color: white;
+    padding: 30px 119px;
+}
+
+#rpg {
+    position: relative;
+    bottom: 797px;
+    left: -283px;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(12,173,167);
+    color: white;
+    padding: 30px 113px;
+}
+
+#trivia {
+    position: relative;
+    bottom: 470px;
+    left: 20px;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(12,173,167);
+    color: white;
+    padding: 30px 110px;
+}
+
+#rutgers {
+    position: relative;
+    bottom: 470px;
+    left: 59px;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(12,173,167);
+    color: white;
+    padding: 30px 85px;
+}
+
+#rock {
+    position: relative;
+    bottom: 127px;
+    left: -590px;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(12,173,167);
+    color: white;
+    padding: 30px 85px;
 }
 
 </style>
@@ -100,25 +177,17 @@ footer {
 <section>
     <h1>Portfolio</h1>
     <hr>
-    <div>
-        <a href="#link"><img src="http://via.placeholder.com/300"></a>
-        <p>Hangman</p>
-    </div>
-    <div>
-        <a href="#link"><img src="http://via.placeholder.com/300"></a>
-        <p>RPG Game</p>
-    </div>
-    <div>
-        <a href="#link"><img src="http://via.placeholder.com/300"></a>
-        <p>Trivia Game</p>
-    </div>
-    <div>
-        <a href="#link"><img src="http://via.placeholder.com/300"></a>
-        <p>Rutgers Info Widget</p>
-    </div>
-    <div>
-        <a href="#link"><img src="http://via.placeholder.com/300"></a>
-        <p>Rock Paper Scissors</p>
+    <div class="container">
+        <img src="http://via.placeholder.com/300" alt="Hangman">
+        <img src="http://via.placeholder.com/300" alt="RPG Game">
+        <img src="http://via.placeholder.com/300" alt="Trivia Game">
+        <img src="http://via.placeholder.com/300" alt="Rutgers Info Widget">
+        <img src="http://via.placeholder.com/300" alt="Rock Paper Scissors">
+        <a id=hangman href="hangman">Hangman</a>
+        <a id=rpg href="rpggame">RPG Game</a>
+        <a id=trivia href="triviagame">Trivia Game</a>
+        <a id=rutgers href="rutgersinfowidget">Rutgers Info Widget</a>
+        <a id=rock href="rockpaperscissors">Rock Paper Scissors</a>
     </div>
 </section>
 

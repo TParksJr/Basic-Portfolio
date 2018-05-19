@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Tyson's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 body {
@@ -17,7 +19,6 @@ section {
     margin: 40px 150px;
     background-color: white;
     padding: 10px;
-    height: 595px;
 }
 
 section img {
@@ -45,7 +46,11 @@ footer {
     text-align: center;
     font-family: Georgia, Times, "Times New Roman", serif;
     border-top: solid rgb(12,173,167) 5px;
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
     height: 50px;
+    clear: both;
 }
 
 #links a {
@@ -66,9 +71,22 @@ footer {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+#links a:visited {
+    color: white;
+    background-color: #777777;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
 #links a:active {
     color: white;
     background-color: black;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#links a:visited:hover {
+    color: white;
+    background-color: rgb(12,173,167);
+    text-decoration: none;
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
